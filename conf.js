@@ -7,15 +7,19 @@ api.map('<Space>bp', 'E');
 api.map('<Space>bc', 'gxx');
 api.map('<Space>bl', 'gx0');
 api.map('<Space>br', 'gx$');
-api.map('<Space>bb', 'W');
+api.map('<Space>bb', 'T');
+api.map('<Space>|', 'W');
 api.map('<Space>c', 'x');
 api.map('<Space>n', 'on');
 api.map('F', 'gf');
 
 
+
+
 api.mapkey('<Space>fb', 'Choose tab with omnibar', function() {
   api.Front.openOmnibar({type: "Tabs"});  
 });
+
 
 api.removeSearchAlias('g');
 api.unmap('og');
@@ -26,14 +30,17 @@ api.unmap('ow');
 api.removeSearchAlias('s');
 api.unmap('os');
 
+
 api.unmap('<Ctrl-6>');
 api.unmap('<Ctrl-p>');
 api.unmap('<Ctrl-n>');
+
 
 settings.tabsThreshold = 9;
 settings.hintAlign = 'left';
 settings.omnibarSuggestionTimeout = 500;
 settings.richHintsForKeystroke = 1;
+
 
 // set theme
 settings.theme = `
