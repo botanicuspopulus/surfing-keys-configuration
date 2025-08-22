@@ -1,9 +1,22 @@
 function getOmnibarTheme(prefix, font_size, enable_shadows) {
   return `
+@keyframes show {
+  0% {
+  transform: translateY(50px);
+  opacity: 0;
+  }
+  100% {
+  transform: translateY(0);
+  opacity: 1;
+  }
+}
+
 #sk_omnibar {
   width: 60%;
   left: 20%;
   box-shadow: ${enable_shadows ? "0px 30px 50px rgba(0, 0, 0, 0.8)" : "none"};
+  border: 2px solid var(--${prefix}-lavender);
+  animation: show 200ms cubic-bezier(0, 0, 0.2, 1) forwards;
 }
 
 .sk_omnibar_middle {
@@ -12,7 +25,12 @@ function getOmnibarTheme(prefix, font_size, enable_shadows) {
 }
 
 .sk_theme .omnibar_highlight {
-    color: var(--${prefix}-yellow);
+  color: var(--${prefix}-green);
+  font-weight: bold;
+}
+
+.sk_theme .url .omnibar_highlight {
+    color: var(--${prefix}-blue);
 }
 
 .sk_theme #sk_omnibarSearchResult ul li:nth-child(odd) {

@@ -19,6 +19,11 @@ function getBaseTheme(prefix, font_size, enable_shadows) {
   color: var(--${prefix}-rosewater);
 }
 
+.sk_theme .title {
+  color: var(--${prefix}-blue);
+  font-weight: bold;
+}
+
 .sk_theme .annotation {
   color: var(--${prefix}-maroon);
 }

@@ -4,7 +4,7 @@ function applyHintsConfig(palette, font_size) {
   border: 2px solid ${palette.mantle};
   color: ${palette.green};
   background: initial;
-  background-color: ${palette.surface0} !important;
+  background-color: ${palette.mantle} !important;
 `);
 
   Hints.style(
@@ -12,7 +12,7 @@ function applyHintsConfig(palette, font_size) {
   font-size: ${font_size};
   border: solid 2px ${palette.mantle};
   color: ${palette.teal} !important;
-  background: ${palette.surface0};
+  background: ${palette.mantle};
 `,
     "text",
   );
